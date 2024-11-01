@@ -1,0 +1,68 @@
+.formulario
+{
+    width: 90%;
+    max-width: 30rem;
+    border-radius: 6px;
+    border: none;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    padding: 2rem;
+    top: 5rem;
+}
+
+button {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    font: inherit;
+    cursor: pointer;
+    border: none;
+    padding: 0.35rem 1.25rem;
+    border-radius: 4px;
+    background-color: #101ff2;
+    color: #FFFFFF;
+  }
+  
+button:disabled {
+    opacity: 0.5; /* make the button less opaque when disabled */
+    cursor: not-allowed; /* change the cursor shape to indicate that the button is disabled */
+}
+
+label
+{
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input
+{
+    padding: 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #f7f7f7;
+    margin-bottom: 10px;
+}
+input[type="text"]
+{
+    width: 90%;
+}
+input[type="color"]
+{
+    padding: 0.25rem;
+    height: 2rem;
+}
+.error-message
+{
+    padding: 10px;
+    width: 95%;
+    color: #ff0000;
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color: #f6cece;
+    border-radius: 4px;
+
+}
+

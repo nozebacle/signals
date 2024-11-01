@@ -1,0 +1,12 @@
+.muestra
+{
+    width: 90%;
+    max-width: 30rem;
+    background-color: #f8e476;
+    border-radius: 6px;
+    border: none;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    padding: 2rem;
+    top: 5rem;
+}

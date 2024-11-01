@@ -1,0 +1,47 @@
+<div class="formulario" style="background-color: {{ colorActual() }}">
+  <form
+    [formGroup]="registroForm"
+    (ngSubmit)="!registroForm.invalid && enviarFormulario()"
+  >
+    <div>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" formControlName="nombre" />
+      @if (registroForm.get('nombre')?.invalid &&
+      registroForm.get('nombre')?.touched ) {
+      <div class="error-message">
+        El nombre es obligatorio y debe tener al menos dos caracteres
+      </div>
+      }
+    </div>
+
+    <div>
+      <label for="activo">Activo:</label>
+      <input
+        type="checkbox"
+        id="activo"
+        name="activo"
+        formControlName="activo"
+      />
+    </div>
+
+    <div>
+      <label for="fecha">Fecha:</label>
+      <input type="date" id="fecha" name="fecha" formControlName="fecha" />
+    </div>
+
+    <div>
+      <label for="color">Color:</label>
+      <input type="color" id="color" name="color" formControlName="color" />
+    </div>
+
+    <div>
+      <button type="button" (click)="saludar()">Saludar</button>
+      <button type="button" (click)="reiniciarValores()" id="reiniciar">
+        Reiniciar
+      </button>
+      <button type="submit" [disabled]="!registroForm.valid" id="enviar">
+        Enviar
+      </button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,11 @@
+<div
+  class="muestra"
+  style="background-color: {{ registroSeleccionado().color }}"
+>
+  <div id="nombre">
+    {{ registroSeleccionado().nombre }}
+  </div>
+  <div id="fecha">{{ registroSeleccionado().fecha | date : "fullDate" }}</div>
+  <div id="color">{{ registroSeleccionado().color }}</div>
+  <div id="activo">{{ registroSeleccionado().activo }}</div>
+</div>
